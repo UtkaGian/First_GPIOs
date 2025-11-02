@@ -4,9 +4,8 @@
 
 #define GPIO "18"
 
-void write_File(const char *path, const char *value);
-
-char read_File(const char *path);
+void write_File(const char *path, const char *value);//simplifica escritura
+char read_File(const char *path);//simplifica lectura
 
 int main(void){
     write_File("/sys/class/gpio/export", GPIO);
